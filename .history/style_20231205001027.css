@@ -250,47 +250,6 @@ header li > a {
     opacity: .4;
 }
 
-.header-nav nav > ul {
-    line-height: 100px;
-    gap: 2em;
-}
-
-.fly-item {
-    position: absolute;
-    height: 16px;
-    font-size: var(--font-smaller);
-    padding: 3px;
-    text-align: center;
-    line-height: 10px;
-    color: var(--white-color);
-}
-
-nav .fly-item {
-    top: 50%;
-    margin-top: -24px;
-    width: 30px;
-    border-radius: 3px;
-    right: -32px;
-    background-color: var(--primary-color);
-}
-
-.header-nav .right {
-    position: relative;
-    margin-left: auto;
-}
-
-.header-nav .right .icon-large {
-    position: relative;
-}
-
-.header-nav .right .fly-item {
-    top: 0;
-    right: 16px;
-    width: 16px;
-    background-color: var(--secondary-dark-color);
-    border-radius: var(--percent50);
-}
-
 @media screen and (max-width: 992px) { 
     .container {
         padding: 0 2em;
