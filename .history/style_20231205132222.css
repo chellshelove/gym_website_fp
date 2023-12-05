@@ -178,12 +178,6 @@ h4 {
     overflow: hidden;
 }
 
-.primary-button, .secondary-button, .light-button {
-    font-size: var(--font-small);
-    padding: 0.9em 2em;
-    height: auto;
-}
-
 /*header*/
 
 header li > a {
@@ -413,6 +407,6 @@ nav .fly-item {
         font-size: 2em;
         font-weight: var(--fw8);
         text-align: center;
-        color: var(--secondary-olor);
+        color: var(--secondary-dark-color);
     }
 }
