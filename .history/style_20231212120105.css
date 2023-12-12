@@ -223,12 +223,6 @@ h4 {
 
 }
 
-.mini-text {
-    font-size: var(--font-smaller);
-    color: var(--light-text-color);
-
-}
-
 
 /*header*/
 
@@ -410,9 +404,6 @@ nav .fly-item {
     height: 60px;
     width: 60px;
 }
-
-/*Search form*/
-
 
 @media screen and (max-width: 992px) { 
     .container {
