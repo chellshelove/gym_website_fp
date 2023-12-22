@@ -420,6 +420,10 @@ nav .fly-item {
     display: block;
 }
 
+.dpt-menu .has-child:hover li a:hover {
+    text-decoration: underline;
+}
+
 
 .header-main .right {
     flex: 1;
