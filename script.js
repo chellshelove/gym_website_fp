@@ -10,7 +10,7 @@ function copyMenu() {
     navPlace.innerHTML = mainNav.innerHTML;
 
     //copy .header-top .warpper to .thetop-nav
-    var topNav = document.querySelector('.header-top');
+    var topNav = document.querySelector('.header-top .wrapper');
     var topPlace = document.querySelector('.off-canvas .thetop-nav');
     topPlace.innerHTML = topNav.innerHTML;
 }
