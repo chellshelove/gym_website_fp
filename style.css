@@ -514,6 +514,15 @@ form.search button:hover {
     color: var(--secondary-dark-color);
     opacity: .75;
 }
+
+.off-canvas .dpt-head {
+    font-size: var(--font-small);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: var(--light-bg-color);
+    border-radius: 7px 7px 0 0;
+}
 /*Search form*/
 
 
