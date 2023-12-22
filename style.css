@@ -530,6 +530,23 @@ form.search button:hover {
     line-height: 28px;
     padding-left: 3em;
 }
+
+.off-canvas .thetop-nav ul, .off-canvas nav > ul {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: var(--font-small);
+    line-height: 36px;
+    padding-top: 1.25em;
+    border-top: 1px solid var(--border-color);
+}
+
+.off-canvas nav .mega {
+    padding: 0;
+}
+
+.off-canvas nav .mega .products {
+    display: none;
+}
 /*Search form*/
 
 
