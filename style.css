@@ -597,6 +597,28 @@ form.search button:hover {
     line-height: 16px;
     margin: 0 0.5em 0.5em 0; 
 }
+
+/* slider*/
+
+.slider > div > .wrapper {
+    width: calc(100% - (300px + 2em));
+    margin-left: auto;
+}
+
+.slider .item {
+    position: relative;
+    height: 474px;
+}
+
+.slider .text-content {
+    position: relative;
+    height: var(--percent100);
+    justify-content: flex-end;
+    padding: 0 0 10%;
+    z-index: 1;
+}
+
+
 /*Search form*/
 
 
