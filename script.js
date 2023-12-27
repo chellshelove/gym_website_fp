@@ -55,6 +55,9 @@ const swiper = new Swiper('.swiper', {
 
 //show search
 
+
+/* original code
+
 const searchButton = document.querySelector('.t-search'),
       tClose = document.querySelector('.search-close'),
       showClass = document.querySelector('.site');
@@ -64,4 +67,18 @@ searchButton.addEventListener('click', function() {
 
 tClose.addEventListener('click', function() {
     showClass.classList.remove('showsearch')
-})
+})*/
+
+window.onload = function() {
+    const searchButton = document.querySelector('.t-search');
+    const tClose = document.querySelector('.search-close');
+    const showClass = document.querySelector('.site');
+
+    searchButton.addEventListener('click', function() {
+        showClass.classList.toggle('showsearch')
+    })
+
+    tClose.addEventListener('click', function() {
+        showClass.classList.remove('showsearch')
+    })
+}
