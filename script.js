@@ -90,3 +90,30 @@ const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
 dptButton.addEventListener('click', function() {
     dptClass.classList.toggle('showdpt')
 })
+
+//product image slider
+
+var productThumb = new Swiper('.small-image', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        481: {
+            spaceBetween: 32,
+        }
+    }
+});
+
+var productBig = new Swiper ('.big-image', {
+    loop: true,
+    autoHeight: true,
+    navigation: {
+        nexEl: '.swiper-button-next',
+        preEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: productThumb
+    }
+});
