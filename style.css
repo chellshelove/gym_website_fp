@@ -1532,6 +1532,7 @@ form.search button:hover {
     content: '-';
 }
 
+
 /*product review form */
 
 .products .reviews h4 {
@@ -1592,6 +1593,115 @@ form.search button:hover {
 .products .review-block-body .item:not(:last-child) {
     border-bottom: 1px solid var(--border-color);
 }
+
+
+
+
+/*page single product review*/
+
+.review-form .rating {
+    flex-wrap: wrap;
+}
+
+.review-form p {
+    font-size: 1.25em;
+    margin-right: 1em;
+}
+
+.review-form .rate-this input {
+    display: none;
+}
+
+.review-form .rate-this label {
+    float: right;
+    font-size: 2em;
+    color: var(--secondary-dark-color);
+}
+
+.rate-this > input:checked ~ label,
+.rate-this:not(:checked) > label:hover,
+.rate-this:not(:checked) > label:hover ~ label {
+    color: #f1c40e;
+}
+
+.rate-this > input:checked + label:hover,
+.rate-this > input:checked ~ label:hover,
+.rate-this > label:hover ~ input:checked ~ label,
+.rate-this > input:checked ~ label:hover ~ label {
+    color: #ffed85;
+}
+
+.review-form form {
+    margin-top: 2.5em;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+form :where(input, textarea) {
+    line-height: 1;
+    padding: 1em;
+    border: 1px solid var(--border-color);
+    outline: 0;
+}
+
+form label {
+    font-weight: var(--fw5);
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+
+
+/*page single special offer*/
+
+.page-single .stock {
+    margin: 2em 0;
+}
+
+.page-single .stock .qty span:last-child {
+    color: initial;
+}
+
+.single-product .stock .bar {
+    height: 10px;
+}
+
+.page-single .stock .bar .available {
+    margin: 0;
+    border-radius: 0;
+    background-color: var(--secondary-dark-color);
+}
+
+.related-products .content {
+    height: var(--percent100);
+}
+
+.related-products .offer {
+    margin: 0;
+}
+
+.related-products .offer p {
+    margin: 0 1em 0 0;
+    text-transform: none;
+    line-height: 1;
+}
+
+.related-products .offer ul li {
+    width: 28px;
+    height: 28px;
+    font-size: var(--font-small);
+    padding: 0.5em 0.25em;
+}
+
+.related-products .content .stock {
+    margin-top: auto;
+}
+
+
 
 
 
@@ -1847,5 +1957,9 @@ form.search button:hover {
 
     #page.showdpt .dpt-menu {
         display: block;
+    }
+
+    .products.one .flexwrap > .row:last-child > .item {
+        padding-left: 2em;
     }
 }
