@@ -1484,6 +1484,8 @@ form.search button:hover {
     text-transform: uppercase;
     padding: 1em 1.25em;
     border-top: 1.5px solid var(--border-color);
+    gap: 1em;
+    align-items: flex-start;
 }
 
 .products .collapse .has-child > a::before {
@@ -1518,6 +1520,83 @@ form.search button:hover {
     padding-left: 2em;
 }
 
+.products .collapse .content {
+    display: none;
+}
+
+.products .collapse .expand .content {
+    display: flex;
+}
+
+.products .collapse .expand > a::before {
+    content: '-';
+}
+
+/*product review form */
+
+.products .reviews h4 {
+    font-size: 2em;
+    color: var(--light-text-color);
+    padding-top: 1em;
+    margin: 1.5em 0 0.5em;
+    border-top: 1px solid var(--border-color);
+}
+
+.products .review-block {
+    color: initial;
+}
+
+.products .review-block-head > a {
+    display: block;
+    font-size: 1.25em;
+    width: var(--percent100);
+    margin-top: 1em;
+    text-align: center;
+}
+
+.products .review-block-head .rate-sum {
+    position: relative;
+    font-size: 4em;
+    font-weight: var(--fw7);
+    padding-right: 0.5em;
+}
+
+.products .review-block-head .rate-sum::before {
+    content: '';
+    width: 2px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    transform: rotate(22deg);
+    background-color: var(--light-bg-color);
+}
+
+.products .review-block-body .item {
+    gap: 1em;
+    padding-bottom: 2.5em;
+    margin-top: 3.5em;
+}
+
+.products .review-block-body :where(.person, .review-title) {
+    font-weight: var(--fw7);
+    text-transform: uppercase;
+}
+
+.products .review-block-body :where(.review-title, .view-all) {
+    font-size: 1.25em;
+    justify-content: end;
+}
+
+.products .review-block-body .item:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+
+
+
 
 
 /*lightbox: go to fslightbox.com */
@@ -1543,6 +1622,12 @@ form.search button:hover {
     .products.one .row {
         flex: 0 0 50%;
         width: 50%;
+    }
+
+    .products.one .is_sticky,
+    .is_sticky {
+        position: sticky;
+        top: 2em;
     }
 }
 
