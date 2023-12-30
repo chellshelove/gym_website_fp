@@ -1923,7 +1923,7 @@ input[type="range"]::-webkit-slider-thumb {
     opacity: 1;
 }
 
-.mini-cart .products img {
+:is(.mini-cart .products, .products.cart) .thumbnail img {
     transform: none;
 }
 
@@ -1954,7 +1954,7 @@ input[type="range"]::-webkit-slider-thumb {
     overflow: auto;
 }
 
-.mini-cart .thumbnail {
+:where(.mini-cart, .products.cart) .thumbnail {
     position: relative;
     width: 80px;
     height: 80px;
@@ -1994,6 +1994,36 @@ input[type="range"]::-webkit-slider-thumb {
     margin-bottom: 1em;
 }
 
+.mini-cart.show {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    max-width: 400px;
+    width: 90%;
+}
+
+/* page cart */
+
+.products.cart form {
+    width: var(--percent100);
+}
+
+.products.cart table thead th {
+    vertical-align: middle;
+    background-color: var(--light-bg-color);
+}
+
+.products.cart table :where(th, td) {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.products.cart table :where(th, td):first-child {
+    text-align: left;
+    padding-left: 2em;
+}
 
 
 /*lightbox: go to fslightbox.com */
@@ -2277,5 +2307,17 @@ input[type="range"]::-webkit-slider-thumb {
 
     .single-category .products.main .item {
         flex: 0 0 33.333%;
+    }
+
+    /* page cart */
+
+    .products.cart .form-cart {
+        width: 66%;
+    }
+
+    .products.cart .cart-summary {
+        width: 34%;
+        padding-left: 2.5em;
+        margin-top: 0;
     }
 }
