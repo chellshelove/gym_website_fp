@@ -472,11 +472,147 @@
                                 <form action="">
                                     <p>
                                         <label for="email">Email Address <span></span></label>
-                                        
+                                        <input type="email" name="email" id="email" autocomplete="off" required>
                                     </p>
+                                    <p>
+                                        <label for="fname">First Name <span></span></label>
+                                        <input type="text" id="fname" required>
+                                    </p>
+                                    <p>
+                                        <label for="lname">Last Name <span></span></label>
+                                        <input type="text" id="lname" required>
+                                    </p>
+                                    <p>
+                                        <label for="cname">Company Name</label>
+                                        <input type="text" id="cname" required>
+                                    </p>
+                                    <p>
+                                        <label for="address">Street Address <span></span></label>
+                                        <input type="text" id="address" required>
+                                    </p>
+                                    <p>
+                                        <label for="city">City <span></span></label>
+                                        <input type="text" id="city" required>
+                                    </p>
+                                    <p>
+                                        <label for="state">State/Province <span></span></label>
+                                        <input type="text" id="state" required>
+                                    </p>
+                                    <p>
+                                        <label for="postal">Zip / Postal Cose <span></span></label>
+                                        <input type="number" id="postal" required>
+                                    </p>
+                                    <p>
+                                        <label for="country">Country</label>
+                                        <select name="country" id="country">
+                                            <option value=""></option>
+                                            <option value="1">Afganistan</option>
+                                            <option value="2">Aland Island</option>
+                                            <option value="3">Albania</option>
+                                            <option value="4" selected="selected">United States</option>
+                                            <option value="5">Others</option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <label for="phone">Phone Number <span></span></label>
+                                        <input type="number" id="phone" required>
+                                    </p>
+                                    <p>
+                                        <label>Order Notes (Optional)</label>
+                                        <textarea cols="30" rows="10"></textarea>
+                                    </p>
+                                    <p class="checkset">
+                                        <input type="checkbox" id="anaccount">
+                                        <label for="anaccount">Create an Account?</label>
+                                    </p>
+
                                 </form>
+                                <div class="shipping-methods">
+                                    <h2>Shipping Methods</h2>
+                                    <p class="checkset">
+                                        <input type="radio" checked>
+                                        <label>$5.00 Flat Rate</label>
+                                    </p>
+                                </div>
+                                <div class="primary-checkout">
+                                    <button class="primary-button">Place Order</button>
+                                </div>
                             </div>
-                            <div class="item right"></div>
+                            <div class="item right">
+                                <h2>Order Summary</h2>
+                                <div class="summary-order is_sticky">
+                                    <div class="summary-totals">
+                                        <ul>
+                                            <li>
+                                                <span>Subtotal</span>
+                                                <span>$2155.95</span>
+                                            </li>
+                                            <li>
+                                                <span>Discount</span>
+                                                <span>-$100.00</span>
+                                            </li>
+                                            <li>
+                                                <span>Shipping: Flat</span>
+                                                <span>$10.00</span>
+                                            </li>
+                                            <li>
+                                                <span>Total</span>
+                                                <span>$2065.95</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="products mini">
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="assets/products/home2.jpg" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Modern Dimmable Ceiling Light</p>
+                                                <span class="price">
+                                                    <span>$279.00</span>
+                                                    <span>x 2</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="assets/products/home3.jpg" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Modern Storage Cabinet with Flower Pot</p>
+                                                <span class="price">
+                                                    <span>$129.99</span>
+                                                    <span>x 1</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="assets/products/home4.jpg" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Vonanda Velvet Sofa Couch</p>
+                                                <span class="price">
+                                                    <span>$352.99</span>
+                                                    <span>x 1</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="assets/products/home5.jpg" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Cool Bed From 50 shades</p>
+                                                <span class="price">
+                                                    <span>$579.99</span>
+                                                    <span>x 1</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -653,6 +789,34 @@
         </div>
 
         <!--search Bottom-->
+
+        <div id="modal" class="modal">
+            <div class="content flexcol">
+                <div class="image object-cover">
+                    <img src="assets/products/apparel4.jpg" alt="">
+                </div>
+                <h2>Get The Latest Deals and Coupons</h2>
+                <p class="mobile-hide">This officially marks day number 11 doing this project, i am about 28 hours of sleep deprived and my eyes are getting heavier by the minute. PLS HELP!</p>
+                <form action="" class="search">
+                    <span class="icon-large"><i class="ri-mail-line"></i></span>
+                    <input type="mail" placeholder="Your email address">
+                    <button>Subscribe</button>
+                </form>
+                <a href="#" class="mini-text">Do not show me this again</a>
+                <a href="#0" class="t-close modalclose flexcenter">
+                    <i class="ri-close-line"></i>
+                </a>
+            </div>
+        </div>
+        <!--modal-->
+
+        <div class="backtotop">
+            <a href="#" class="flexcol">
+                <i class="ri-arrow-up-line">
+                    <span>Top</span>
+                </i>
+            </a>
+        </div>
 
         <div class="overlay"></div>
 
